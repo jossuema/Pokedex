@@ -4,6 +4,7 @@ const fetchPokemon = () => {
     pokeName = pokeName.toLowerCase();
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
     fetch(url).then((res) => {
+        console.log(res)
         if (res.status != "200") {
             console.log(res);
             pokeImage("images/psyduck.gif")
@@ -14,7 +15,7 @@ const fetchPokemon = () => {
     }).then((data) => {
         if (data) {
             console.log(data);
-            let pokeImg = data.sprites.front_default;
+            let pokeImg = data.sprites.back_default;
             pokeImage(pokeImg);
             console.log(pokeImg);
         }

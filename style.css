@@ -1,0 +1,34 @@
+*{
+    font-family: 'Fuzzy Bubbles', cursive;
+    box-sizing: border-box;
+}
+
+html{
+    height: 0;
+}
+
+main{
+    height: 99vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.bloque1{
+    vertical-align: top;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 5% 0 0 5%;
+    box-shadow: inset 0 0 5px #802400, 0 0 10px #802400;
+}
+
+.bloque2{
+    vertical-align: bottom;
+    height: 70%;
+}
+
+.bloque1, .bloque2{
+    width: 40%;
+    background-color: red;
+    display: inline-block;
+}
